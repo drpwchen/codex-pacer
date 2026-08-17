@@ -1,0 +1,1 @@
+{"timestamp":"2099-08-10T10:01:00.000Z","type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":85000},"model_context_window":100000},"rate_limits":{"limit_id":"codex","primary":{"used_percent":94,"window_minutes":300,"resets_at":4090212000},"secondary":null,"plan_type":"plus"}}}

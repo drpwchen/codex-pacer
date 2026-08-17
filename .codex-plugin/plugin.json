@@ -1,0 +1,25 @@
+{
+  "name": "codex-pacer",
+  "version": "0.1.0",
+  "description": "Usage status, budget guard, and pacing verdicts for Codex.",
+  "author": {
+    "name": "Po-Wei Chen",
+    "url": "https://github.com/drpwchen"
+  },
+  "repository": "https://github.com/drpwchen/codex-pacer",
+  "license": "MIT",
+  "keywords": ["codex", "usage", "rate-limit", "pacing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Pacer",
+    "shortDescription": "See quota runway and slow agents before the cap.",
+    "longDescription": "Reads Codex session usage events, displays context and quota headroom, injects soft and hard pacing guidance through native lifecycle hooks, and provides GO/PACE/STOP verdicts for long or multi-agent work.",
+    "developerName": "Po-Wei Chen",
+    "category": "Productivity",
+    "capabilities": ["Hooks", "Local scripts"],
+    "defaultPrompt": [
+      "Show my current Codex usage and pacing verdict.",
+      "Can I safely launch another multi-agent wave?"
+    ]
+  }
+}

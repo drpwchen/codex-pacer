@@ -1,0 +1,15 @@
+{
+  "description": "Codex usage pacing guard",
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [
+        { "type": "command", "command": "node \"$PLUGIN_ROOT/scripts/budget-guard.cjs\"", "commandWindows": "cmd /c node \"%PLUGIN_ROOT%\\scripts\\budget-guard.cjs\"", "timeout": 10, "statusMessage": "Checking Codex usage budget" }
+      ] }
+    ],
+    "PostToolUse": [
+      { "matcher": ".*", "hooks": [
+        { "type": "command", "command": "node \"$PLUGIN_ROOT/scripts/budget-guard.cjs\"", "commandWindows": "cmd /c node \"%PLUGIN_ROOT%\\scripts\\budget-guard.cjs\"", "timeout": 10, "statusMessage": "Checking Codex usage budget" }
+      ] }
+    ]
+  }
+}

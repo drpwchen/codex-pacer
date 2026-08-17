@@ -1,0 +1,9 @@
+{
+  "display": "bar",
+  "guard": {
+    "soft_pct": 85,
+    "hard_pct": 93,
+    "rearm_min": 10,
+    "near_reset_min": 20
+  }
+}
