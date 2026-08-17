@@ -8,6 +8,8 @@ Codex 用量狀態、原生額度警戒 hook，以及 GO／PACE／STOP 配速判
 
 把本目錄放入本機 Codex marketplace 後安裝 plugin。安裝完成請開新對話，執行 `/hooks`，檢查並信任兩個 hook。
 
+Codex 實際執行的是依版本號快取的複本，不是本目錄。之後改任何 plugin 檔案，都要先在 `.codex-plugin/plugin.json` 調升 `version`，再跑一次 `codex plugin add`，改動才會生效；若 `hooks/hooks.json` 有變，還要在 `/hooks` 重新信任。
+
 手動執行：
 
 ```bash

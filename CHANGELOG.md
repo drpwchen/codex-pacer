@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.1] — 2026-08-17 — Version bump so Codex re-materializes the plugin cache
+
+- No code changes. Codex never runs a local plugin's source directory: it runs a
+  version-keyed materialized cache under
+  `~/.codex/plugins/cache/<marketplace>/codex-pacer/<version>/`, and a plain
+  session start does not refresh it. Fixes shipped into the source directory —
+  including 0.1.0's `cmd /c` Windows hook fix — were therefore never loaded, and
+  `/hooks` trust was being granted against the stale cached definitions.
+- Upgrading (and any future hooks change) requires all three steps: bump the
+  `version` in `.codex-plugin/plugin.json`, run
+  `codex plugin add codex-pacer@<marketplace>`, then re-trust via `/hooks` in the
+  TUI if the hook definitions changed.
+
 ## [0.1.0] — 2026-08-17 — Codex port of claude-pacer, with a hardened budget-guard
 
 - Port claude-pacer to Codex lifecycle hooks and plugin packaging.

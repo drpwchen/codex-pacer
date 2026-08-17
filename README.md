@@ -23,6 +23,8 @@ No npm or pip dependencies are required. Node.js, Python 3, and Codex CLI are en
 
 Place this directory at `<marketplace-root>/plugins/codex-pacer`, add a `codex-pacer` local-source entry to `<marketplace-root>/.agents/plugins/marketplace.json`, then run `codex plugin marketplace add <marketplace-root>` and `codex plugin add codex-pacer@<marketplace-name>`. Start a new Codex thread after installing, then run `/hooks` and trust the two plugin hooks.
 
+Codex runs a version-keyed materialized copy of the plugin, not this directory. After editing any plugin file, bump the `version` in `.codex-plugin/plugin.json` and run `codex plugin add codex-pacer@<marketplace-name>` again, or your changes will never load; if `hooks/hooks.json` changed, also re-trust via `/hooks`.
+
 ## Run manually
 
 ```bash

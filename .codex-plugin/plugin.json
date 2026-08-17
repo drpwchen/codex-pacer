@@ -1,6 +1,6 @@
 {
   "name": "codex-pacer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Usage status, budget guard, and pacing verdicts for Codex.",
   "author": {
     "name": "Po-Wei Chen",
