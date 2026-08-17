@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0
+## [0.1.0] — 2026-08-17 — Codex port of claude-pacer, with a hardened budget-guard
 
 - Port claude-pacer to Codex lifecycle hooks and plugin packaging.
 - Read Codex `token_count` transcript events and support variable quota windows.
