@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.2] — 2026-11-03 — Add CLAUDE.md bridge to AGENTS.md
+
+- Add a root `CLAUDE.md` containing only `@AGENTS.md`, so Claude Code versions that
+  read only `CLAUDE.md` pick up the same development notes. No code changes.
+
 ## [0.1.1] — 2026-08-17 — Version bump so Codex re-materializes the plugin cache
 
 - No code changes. Codex never runs a local plugin's source directory: it runs a
