@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.3] — 2026-11-14 — Docs: README quality pass
+
+- README: added Requirements & cost, a Quickstart with expected results, a support line, Limitations, a related-tools line and a toolbox link; footer Support section.
+- README.zh-TW: now mirrors the English README (quickstart, requirements, limitations).
+- No code changes; `plugin.json` version is unchanged, so installed plugin caches are unaffected.
+
 ## [0.1.2] — 2026-11-03 — Add CLAUDE.md bridge to AGENTS.md
 
 - Add a root `CLAUDE.md` containing only `@AGENTS.md`, so Claude Code versions that
